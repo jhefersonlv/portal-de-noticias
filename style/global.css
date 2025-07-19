@@ -24,8 +24,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-    
+
+* h1 {
+    font: var(--heading1);
+}
+
+* h3 {
+    font: var(--heading3)
+}
+
 body{         
     background-color: var(--background-color);
     font: var(--paragraph);

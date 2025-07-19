@@ -1,0 +1,40 @@
+
+
+#primary {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#primary a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+
+#primary h1 a {
+    color: var(--brand-color-light);
+    font: var(--heading1);
+}
+
+#secondary {
+    border-top: 1px solid var(--stroke-color);
+    border-bottom: 1px solid var(--stroke-color);
+    padding: 14px 0;
+}
+
+#secondary ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#secondary ul li {
+    list-style: none;
+    font: var(--span);
+    color: var(--text-color-secondary);
+}
+

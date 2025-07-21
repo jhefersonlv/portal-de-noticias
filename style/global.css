@@ -27,6 +27,11 @@
 
 }
 
+* a {
+    text-decoration: none;
+    color: var(--text-color-primary);
+} 
+
 * h1 {
     font: var(--heading1);
 }
@@ -35,14 +40,57 @@
     font: var(--heading3)
 }
 
-body{         
+body {         
     background-color: var(--background-color);
     font: var(--paragraph);
     color: var(--text-color-primary);
 }
 
 .container {
-    padding: 0 32px;
+    padding: 0 32px 32px 32px;
     max-width: 1280px;
     margin: 0 auto;
+}
+
+span.content-tag {
+        display: inline-block;
+        background-color: var(--brand-color-dark);
+        padding: 4px 8px;
+        font: 500 10px/1.2 var(--font-family);
+        letter-spacing: 0.04em;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 16px rgba(2, 6, 23, 0.25);
+        text-transform: uppercase;
+    }
+
+.grid {
+    display: grid;
+}
+
+.grid-templete-2-cols {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.grid-flow-cols{
+    grid-auto-flow: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.seta::before {
+     content: "";
+        inset: 0;
+        top: 50%;
+        background: url(../assets/icons/ArrowRight.svg) no-repeat ;
 }

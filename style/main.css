@@ -1,4 +1,5 @@
 main {
+    margin-top: 40px;
 }
 
 #noticias img {
@@ -9,7 +10,6 @@ main {
 }
 
 #noticias {
-    border: 1px solid red;
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -25,37 +25,84 @@ main {
 }
 
 .description {
-    border: 1px solid blue;
     position: absolute;
     bottom: 0;
     padding: 72px 24px 24px 24px;
     font: var(--heading1);
-
-    span {
-        display: inline-block;
-        background-color: var(--brand-color-dark);
-        padding: 4px 8px;
-        font: 500 10px/1.2 var(--font-family);
-        letter-spacing: 0.04em;
-        border-radius: 4px;
-        margin-bottom: 8px;
-        box-shadow: 0 4px 16px rgba(2, 6, 23, 0.25);
-        text-transform: uppercase;
-    }
 
     &:has(h3) {
         padding: 12px;
     }
 }
 
-#destaques {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+#weekly {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-top: 1px solid var(--stroke-color);
 }
 
-#destaque-02 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+#weekly header {
+    justify-content: space-between;
+    margin: 24px 0;
 }
+
+#weekly img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#weekly div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#weekly span {
+    position: absolute;
+    margin: 8px;
+}
+
+#section-footer {
+    grid-template-areas: 
+    "ai ai ads"
+    "ai ai news"
+    "ai ai news";
+
+    p {
+        color: var(--text-color-secondary);
+    }
+}
+
+#ai {
+    grid-area: ai;
+    gap: 32px;
+
+    img {
+        width: 176px;
+        height: 176px;
+    }
+
+    header {
+        border-top: 1px solid var(--stroke-color);
+        padding-top: 12px;
+        margin-bottom: 24px;
+    }
+
+}
+
+#ads {
+    grid-area: ads;
+
+    img {
+        width: 100%;
+    }
+}
+
+#news {
+    grid-area: news;
+
+    img {
+        width: 72px;
+        height: 72px;
+    }
+}
+

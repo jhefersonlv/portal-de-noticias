@@ -1,0 +1,49 @@
+@media (width <= 63.75em) {
+    
+    .desktop-only {
+        display: none;
+    }
+
+    section#destaques {
+        display: flex;
+        flex-direction: column;
+
+        & #destaque-01 img {
+            height: 26rem;
+            
+        }
+
+        & #destaque-02 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    #weekly {
+        
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
+    #section-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ai {
+        gap: 2rem;
+
+        & article {
+            max-height: 11rem;
+            overflow: hidden;
+
+            & img {
+                width: 5rem;
+                height: auto;
+            }
+        }
+    }
+}
